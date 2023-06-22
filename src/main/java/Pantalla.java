@@ -1,5 +1,20 @@
 public class Pantalla {
-	private String marca;
-	private String modelo;
-	private int año;
+	private final String marca;
+	private final String modelo;
+	private final int year;
+
+	public Pantalla(String marca, String modelo, int year) {
+		this.marca = marca;
+		this.modelo = modelo;
+		this.year = year;
+	}
+
+	@Override
+	public String toString() {
+		return "Pantalla{" +
+				"marca='" + marca + '\'' +
+				", modelo='" + modelo + '\'' +
+				", year=" + year +
+				'}';
+	}
 }

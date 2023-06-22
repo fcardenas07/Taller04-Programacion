@@ -1,8 +1,21 @@
 public class Cliente {
-	private String nombre;
-	private String apellido;
-	private String correo;
-	private int nroContacto;
-	private String ciudad;
-	private EstadoCivil estadoCivil;
+	private final String nombre;
+	private final String apellido;
+	private final String correo;
+	private final int nroContacto;
+	private final String ciudad;
+	private final EstadoCivil estadoCivil;
+
+	public Cliente(String nombre, String apellido, String correo, int nroContacto, String ciudad, EstadoCivil estadoCivil) {
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.correo = correo;
+		this.nroContacto = nroContacto;
+		this.ciudad = ciudad;
+		this.estadoCivil = estadoCivil;
+	}
+
+	public int getNroContacto() {
+		return nroContacto;
+	}
 }

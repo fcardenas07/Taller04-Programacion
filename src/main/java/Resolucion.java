@@ -1,4 +1,9 @@
 public class Resolucion {
-	private int horizontal;
-	private int vertical;
+	private final int horizontal;
+	private final int vertical;
+
+	public Resolucion(int horizontal, int vertical) {
+		this.horizontal = horizontal;
+		this.vertical = vertical;
+	}
 }
