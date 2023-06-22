@@ -26,7 +26,7 @@ public class PCEscritorio extends Dispositivo {
 
     @Override
     public String getTipo() {
-        return this.getClass().toString();
+        return "PC Escritorio";
     }
 
     @Override

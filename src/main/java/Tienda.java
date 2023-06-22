@@ -5,10 +5,10 @@ import static java.util.stream.Collectors.toList;
 
 public class Tienda {
 	private final String direccion;
-	private final ArrayList<Dispositivo> catalogo;
-	private final ArrayList<Cliente> clientes;
+	private final List<Dispositivo> catalogo;
+	private final List<Cliente> clientes;
 
-	public Tienda(String direccion, ArrayList<Dispositivo> catalogo, ArrayList<Cliente> clientes) {
+	public Tienda(String direccion, List<Dispositivo> catalogo, List<Cliente> clientes) {
 		this.direccion = direccion;
 		this.catalogo = catalogo;
 		this.clientes = clientes;
@@ -47,5 +47,13 @@ public class Tienda {
 
 	private boolean compararDispositivos(String modelo, String tipo, Dispositivo dispositivo) {
 		return dispositivo.modelo.equals(modelo) && dispositivo.getTipo().equals(tipo);
+	}
+
+	public List<Cliente> getClientes() {
+		return clientes;
+	}
+
+	public List<Dispositivo> getCatalogo() {
+		return catalogo;
 	}
 }

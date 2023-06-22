@@ -20,12 +20,24 @@ public class Notebook extends Dispositivo {
 		this.resolucion = resolucion;
 	}
 
-
-	public String getTablaEspecificacion() {
-		throw new UnsupportedOperationException();
+	public String getTipo() {
+		return "Notebook";
 	}
 
-	public String getTipo() {
-		throw new UnsupportedOperationException();
+	@Override
+	public String getTablaEspecificacion() {
+		return "Notebook{" +
+				"bateriamAh=" + bateriamAh +
+				", teclado='" + teclado + '\'' +
+				", resolucion=" + resolucion +
+				", marca='" + marca + '\'' +
+				", ramGB=" + ramGB +
+				", almacenamientoGB=" + almacenamientoGB +
+				", procesador='" + procesador + '\'' +
+				", modelo='" + modelo + '\'' +
+				", year=" + year +
+				", precio=" + precio +
+				", stock=" + stock +
+				'}';
 	}
 }

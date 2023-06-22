@@ -21,7 +21,7 @@ public class Tablet extends Dispositivo {
 
 
 	public String getTipo() {
-		return this.getClass().toString();
+		return "Tablet";
 	}
 
 
